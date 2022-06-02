@@ -41,7 +41,18 @@ buildscript {
 */
 //version=currentVersion
 
-apply plugin: 'com.jfrog.artifactory'
+
+buildscript {
+  repositories {
+    mavenCentral()
+  }
+  dependencies {
+    classpath "org.jfrog.buildinfo:build-info-extractor-gradle:latest.release"
+  }
+}
+apply plugin: "com.jfrog.artifactory"
+
+//apply plugin: 'com.jfrog.artifactory'
 apply plugin: 'java'
 apply plugin: 'maven-publish'
 
