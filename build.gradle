@@ -51,9 +51,9 @@ buildscript {
     classpath "org.jfrog.buildinfo:build-info-extractor-gradle:latest.release"
     classpath("org.springframework.boot:spring-boot-gradle-plugin:latest.release")
     //testImplementation('org.springframework.boot:spring-boot-starter-actuator')
-    testImplementation('org.springframework.boot:spring-boot-starter-web')
+    implementation('org.springframework.boot:spring-boot-starter-web')
     runtime('org.springframework.boot:spring-boot-devtools')
-    testImplementation('org.springframework.boot:spring-boot-starter-test')
+    implementation('org.springframework.boot:spring-boot-starter-test')
     
   }
 }
