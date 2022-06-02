@@ -36,6 +36,7 @@ buildscript {
 	} 
 	dependencies {
 		classpath(group : org.jfrog.buildinfo ' , name : 'build-info-extractor-gradle' , version : '4.0.0')
+		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
 	}
 }
 */
@@ -48,9 +49,17 @@ buildscript {
   }
   dependencies {
     classpath "org.jfrog.buildinfo:build-info-extractor-gradle:latest.release"
+    classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+    compile('org.springframework.boot:spring-boot-starter-actuator')
+    compile('org.springframework.boot:spring-boot-starter-web')
+    runtime('org.springframework.boot:spring-boot-devtools')
+    testCompile('org.springframework.boot:spring-boot-starter-test')
+    
   }
 }
 apply plugin: "com.jfrog.artifactory"
+
+
 
 //apply plugin: 'com.jfrog.artifactory'
 apply plugin: 'java'
