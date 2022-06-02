@@ -1,4 +1,4 @@
-/*buildscript {
+buildscript {
 	ext {
 		springBootVersion = '1.5.9.RELEASE'
 	}
@@ -9,7 +9,7 @@
 		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
 	}
 }
-
+/*
 apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'org.springframework.boot'
