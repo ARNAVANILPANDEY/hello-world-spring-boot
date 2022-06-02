@@ -49,7 +49,7 @@ buildscript {
   }
   dependencies {
     classpath "org.jfrog.buildinfo:build-info-extractor-gradle:latest.release"
-    classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+    classpath("org.springframework.boot:spring-boot-gradle-plugin:latest.release")
     compile('org.springframework.boot:spring-boot-starter-actuator')
     compile('org.springframework.boot:spring-boot-starter-web')
     runtime('org.springframework.boot:spring-boot-devtools')
