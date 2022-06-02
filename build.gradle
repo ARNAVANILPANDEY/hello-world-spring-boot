@@ -73,7 +73,7 @@ artifactory {
 	contextUrl = ' http://localhost:8082/artifactory'
 	publish { 
 		repository { 
-			repokey =  'hello-gradle' // The Artifactory repository key to publish to 
+			repoKey =  'hello-gradle' // The Artifactory repository key to publish to 
 			username = '$(artifactory_user)'  // The publisher user name 
 			password = '$(artifactory_password)' // The publisher password
 		} 
