@@ -1,4 +1,4 @@
-buildscript {
+/*buildscript {
 	ext {
 		springBootVersion = '1.5.9.RELEASE'
 	}
@@ -9,7 +9,7 @@ buildscript {
 		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
 	}
 }
-/*
+
 apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'org.springframework.boot'
@@ -30,14 +30,14 @@ dependencies {
 }
 */
 
-buildscript {
+//buildscript {
 	repositories {
 		jcenter () 
 	} 
 	dependencies {
 		classpath(group : org.jfrog.buildinfo ' , name : 'build-info-extractor-gradle' , version : '4.0.0')
 	}
-}
+//}
 
 version=currentVersion
 
