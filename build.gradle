@@ -89,7 +89,7 @@ artifactory {
 		}
 	}
 	resolve {
-		repKey='jcenter'
+		repoKey='jcenter'
 	}
 }
 
